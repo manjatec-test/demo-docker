@@ -8,6 +8,7 @@ jobs:
 
     build:
         runs-on: ubuntu-latest
+        environment: desenvolvimento
         permissions:
             contents: read
             packages: write
@@ -19,7 +20,7 @@ jobs:
               with:
                 login-server: ghrc.io
                 username: "marcios"
-                password: ${{secrets.GITHUB_TOKEN}}
+                password: ${{secrets.PAT}}
 
             - name: Build the docker image
               run: |
