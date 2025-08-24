@@ -20,7 +20,7 @@ jobs:
               with:
                 login-server: ghrc.io
                 username: "manjatec-test"
-                password: ${{ secrets.GITHUB_REGISTRY }}
+                password: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Build the docker image
               run: |
