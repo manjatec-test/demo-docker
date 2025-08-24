@@ -19,8 +19,8 @@ jobs:
             - uses: azure/docker-login@v1
               with:
                 login-server: ghrc.io
-                username: "manjatec-test"
-                password: ${{secrets.GITHUB_TOKEN}}
+                username: "marcios"
+                password: ${{ secrets.GITHUB_REGISTRY }}
 
             - name: Build the docker image
               run: |
